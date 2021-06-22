@@ -14,12 +14,21 @@ class MainActivity : AppCompatActivity() {
         /* val -> imutavel */
         val tvResult = findViewById<TextView>(R.id.tvResult)
         val btEnter = findViewById<Button>(R.id.btEnter)
+        val btClear = findViewById<Button>(R.id.btClear)
         val etName = findViewById<EditText>(R.id.etName)
+        val etLastName = findViewById<EditText>(R.id.etLastName)
 
         btEnter.setOnClickListener {
-            tvResult.text = etName.text.toString()
+            var name = etName.text.toString()
+            var lastName = etLastName.text.toString()
+
+            tvResult.text = name + " " + lastName
         }
 
-
+        btClear.setOnClickListener {
+            tvResult.text = "O resultado aparecerá aqui"
+            etName.setText("")
+            etLastName.setText("")
+        }
     }
 }
