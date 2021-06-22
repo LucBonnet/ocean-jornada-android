@@ -26,8 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         btClear.setOnClickListener {
-            tvResult.text = "O resultado aparecerá aqui"
+            tvResult.setText(R.string.resul)
             etName.setText("")
+            //etName.text.clear()
             etLastName.setText("")
         }
     }

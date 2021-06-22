@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ocean-android-introducao 22/06/2021</string>
+    <string name="resul">Results</string>
+    <string name="btClear">Clear</string>
+    <string name="btEnter">Send</string>
+</resources>

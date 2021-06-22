@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ocean-android-introducao</string>
+    <string name="app_name">Laboratório 22/06/2021</string>
     <string name="resul">O resultado aparecerá aqui</string>
     <string name="btClear">Limpar</string>
     <string name="btEnter">Enviar</string>
