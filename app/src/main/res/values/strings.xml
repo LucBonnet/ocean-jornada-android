@@ -3,4 +3,5 @@
     <string name="resul">O resultado aparecerá aqui</string>
     <string name="btClear">Limpar</string>
     <string name="btEnter">Enviar</string>
+    <string name="btNewScreen">Nova Tela</string>
 </resources>

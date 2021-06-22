@@ -1,5 +1,6 @@
 package com.oceanbrasil.ocean_android_introducao
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val tvResult = findViewById<TextView>(R.id.tvResult)
         val btEnter = findViewById<Button>(R.id.btEnter)
         val btClear = findViewById<Button>(R.id.btClear)
+        val btNewScreen = findViewById<Button>(R.id.btNewScreen)
         val etName = findViewById<EditText>(R.id.etName)
         val etLastName = findViewById<EditText>(R.id.etLastName)
 
@@ -30,6 +32,11 @@ class MainActivity : AppCompatActivity() {
             etName.setText("")
             //etName.text.clear()
             etLastName.setText("")
+        }
+
+        btNewScreen.setOnClickListener {
+            val newScreenIntent = Intent(this, SecondActivity::class.java)
+            startActivity(newScreenIntent)
         }
     }
 }
