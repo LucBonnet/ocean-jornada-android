@@ -5,4 +5,5 @@
     <string name="btClear">Clear</string>
     <string name="btEnter">Send</string>
     <string name="btNewScreen">New Screen</string>
+    <string name="btBack">Back</string>
 </resources>

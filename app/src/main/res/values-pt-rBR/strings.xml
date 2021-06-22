@@ -5,4 +5,5 @@
     <string name="btClear">Limpar</string>
     <string name="btEnter">Enviar</string>
     <string name="btNewScreen">Nova Tela</string>
+    <string name="btBack">Voltar</string>
 </resources>
