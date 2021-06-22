@@ -8,6 +8,11 @@ import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        const val EXTRA_INFO = "EXTRA_INFO"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,6 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         btNewScreen.setOnClickListener {
             val newScreenIntent = Intent(this, SecondActivity::class.java)
+            newScreenIntent.putExtra(EXTRA_INFO, etName.text.toString())
             startActivity(newScreenIntent)
         }
     }
